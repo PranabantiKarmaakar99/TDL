@@ -5,11 +5,12 @@
 
 
 body {
-    background-image: url("../../public/Background2.png");
+    /* background-image: url("../../public/Background2.png"); */
     /* background-size: contain; */
     /* background-position: 100% 100%; */
-    background-position: center center;
-    background-color: rgba(0,0,0, 0.5);
+    /* background-position: center center;
+    background-color: rgba(0,0,0, 0.5);  */
+ 
  
 
 
@@ -18,5 +19,8 @@ body {
 ::placeholder {
     padding: 5px 12px;
     margin: 5px;
+   
  }
+
+
 
