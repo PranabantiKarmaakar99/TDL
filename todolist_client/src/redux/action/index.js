@@ -4,9 +4,11 @@ import { ADDNEW_TODO, GETALL_TODO, TOGGLE_TODO, UPDATE_TODO, DELETE_TODO, TOGGLE
 
 // const API_URL = 'http://localhost:7000';
 
+const API_URL = 'http://localhost:7000';
+
 export const addNewTodo = (data) => async (dispatch) => {
     try {
-        const res = await axios.post(`api/server/controller/controller`, { data });
+        const res = await axios.post(`${API_URL}/todos`, { data });
 
         dispatch({ type: ADDNEW_TODO , payload: res.data });
     } catch (error) {

@@ -1,6 +1,6 @@
 import Todo from '../model/Todo.js';
 
- const handler = async (request, response) => {
+ export const addTodo = async (request, response) => {
     try {
         const newTodo = await Todo.create({
             data: request.body.data,
@@ -67,4 +67,4 @@ import Todo from '../model/Todo.js';
 //     }
 // }
 
-export default handler
+// export default addTodo;
